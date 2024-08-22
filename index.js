@@ -96,3 +96,13 @@ for(let i=0; i< pizzas.length; i++){
 // d) Todos los ingredientes de cada pizza (En cada iteración imprimir los ingredientes de la pizza 
 //   que se esta recorriendo). Ayuda: van a tener que realizar dos recorridos, ya que cada pizza del 
 //   array de pizzas tiene una propiedad "ingredientes" cuyo valor es un array con ingredientes.
+
+console.log("*** Ingredientes de cada pizza ***");
+for (let i = 0; i < pizzas.length; i++) {
+  console.log("Pizza:", pizzas[i].nombre);
+  console.log("Ingredientes:");
+  for (let j = 0; j < pizzas[i].ingredientes.length; j++) {
+    console.log(pizzas[i].ingredientes[j]);
+  }
+  console.log("----------------------");
+}
